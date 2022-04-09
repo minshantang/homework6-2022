@@ -53,13 +53,13 @@ document.querySelector("#skip").addEventListener("click", function () {
 document.querySelector("#mute").addEventListener("click", function () {
 	// Mute/unmute the video and update the text in the button
 	if (video.muted == true) {
+		console.log("Video currently unmuted");
 		video.muted = false;
 		this.innerHTML = "Mute";
-		console.log("Video muted");
 	} else {
+		console.log("Video currently muted");
 		video.muted = true;
 		this.innerHTML = "Unmute";
-		console.log("Video unmuted");
 	}
 });
 
